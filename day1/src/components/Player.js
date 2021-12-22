@@ -6,7 +6,7 @@ function Player(props) {
      <div className="player">
          {audios.map((item) => {
            return (
-            <Tile item={item}/>
+            <Tile item={item} key={item.id}/>
            )
           })}
      </div>
